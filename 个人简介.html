@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+    .out{
+      background-image:url("images/pupleStar.jpg");
+      overflow:cover;
+      border-radius:10px ;
+      border-bottom:none;
+    }
+    .introduction {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background:linear-gradient(to right,rgb(98, 52, 177),rgba(111, 11, 192, 0.737),rgb(141, 5, 220));
+      border-radius:10px;
+    }
+
+    .introduction-inf {
+      justify-content: center;
+      align-items: flex-start;
+      font-size: 30px;
+      font-family: "宋体", sans-serif;
+      font-weight: 700px;
+      color:yellow;
+    border-top:none;
+      height: 100%;
+      float: left;
+      width:30%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      height: 100vh;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li::before {
+      content: "★";
+      /* 使用 ::before 伪元素添加内容 */
+      color: red;
+      /* 设置标记的颜色 */
+      margin-right: 5px;
+      /* 可选，如果需要调整标记与文本之间的间距 */
+    }
+    .introduction-image{
+      width:40%;
+height:300px;
+float:right;
+background: linear-gradient(to left,rgb(141, 5, 220),rgba(111, 11, 192, 0.737),rgb(61, 20, 173));
+border-radius:10px;
+opacity:1;
+    }
+    .introduction-image img{
+      width:50%;
+      height:400px;
+      overflow:hidden;
+      opacity:1;
+      border-radius:2000px;
+      border:2px dashed rgb(0, 174, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="introduction">
+    <h1>个人简介</h1>
+  </div>
+  <div style="width:100% ;height:800px;"class="out">
+    <div class="introduction-inf" height="100%">
+      <ul>
+
+        <li>姓名：&nbsp;&nbsp;苏你曲</li>
+        <li>性别：&nbsp;&nbsp;&nbsp男</li>
+        <li>民族：&nbsp;&nbsp;彝族</li>
+        <li>班级：&nbsp;&nbsp计科211</li>
+        <li>爱好：&nbsp;&nbsp;打篮球</li>
+        <li>院系：计算机科学与工程</li>
+        <li>归属地：&nbsp;四川凉山</li>
+        <li>邮箱:&nbsp;3156563873@qq.com</li>
+      </ul>
+    </div>
+    <div class="introduction-image"><img src="images/MySelf.jpg" alt="外星人飞走了！">
+    </div>
+  </div>
+</body>
+
+</html>
